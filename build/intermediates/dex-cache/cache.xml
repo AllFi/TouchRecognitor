@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\4e9f53199ffe035d2181bbc05ccdeab38af0f6e1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b8395aa2d7727df8657c38f999e6592a69253058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\4ec9612ebd8f2dc142930ac1603db73076b5c1db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9fc34e2b76673b0573b9779ee4ef56e1ae7bf846\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\b2a2ed20ab05ac7521570728b15f0c750b153137\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b4c49b52e5f623fa87b30fea2e1f1540ce80e5a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\0e5cb85a4891c14126ebc1a7730ee24a48d5376f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_edf43add110e0d4e99feb88602368de79a1149d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_ced53534f39b563e23f3ea1fff8f988cc2eef87b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\5cdf1eb0d5f66d70d70f9255f0da082e66576532\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_99cdc2dce7d4f6ed34aa024e432134817b08bc7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\e2e0da12250360b3590a02aa4a79dbcb4cec357a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c8bfc833e1de8d6b5b176529cb5efa8e84d3223\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\ac7181692f90614c3d34d1f9ca289b7f02f2cfa1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_db7834a19831489aaf4a5cda5840be4dd94d5a1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_dce0f5dc4ec87302d879250c45fe5f3f72f02917\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ca8cc05ac684cbe5cece263669a1f6399142fe9">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_43badd16b99d1a656faee04d115ceeb9ee27f239\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\61d9d8193168c9731ba2e2299666b38330f4d193\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e69925e415258ec8c8bcdfc6c21957a112e2d8f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_33e8b3fa85bb79c7f9013bb0cd7b355cd0561e30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\bbf0b3e293567ce8e1dace8e6e07f8b1c6501720\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ddb5dc7ac814cceb58ecbac4a5115a06d22cf6cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\админ\.android\build-cache\48a6591016083f88234fe90db57983a131ddf88c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\AndroidStudioProjects\TouchRecognitor\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cad85085ff57fb147a03e9859494c8ba79e39dde\classes.dex" />
+    </item>
+
+</items>

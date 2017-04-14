@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Создать"
+        android:layout_below="@+id/twists"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Укажите количество измерений для каждого типа касаний"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/count"
+        android:layout_alignEnd="@+id/count" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ваше имя"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text="Создание датасета"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите движения, которые войдут в датасет"
+        android:layout_below="@+id/count"
+        android:layout_alignStart="@+id/count"
+        android:layout_alignEnd="@+id/count" />
+
+    <CheckBox
+        android:id="@+id/scrolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:text="Scrolls" />
+
+    <CheckBox
+        android:id="@+id/taps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/scrolls"
+        android:layout_alignStart="@+id/scrolls"
+        android:layout_below="@+id/scrolls"
+        android:text="Taps" />
+
+    <CheckBox
+        android:id="@+id/resizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/taps"
+        android:layout_alignStart="@+id/taps"
+        android:layout_below="@+id/taps"
+        android:text="Resizes" />
+
+    <CheckBox
+        android:id="@+id/twists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/resizes"
+        android:layout_alignStart="@+id/resizes"
+        android:layout_below="@+id/resizes"
+        android:text="Twists" />
+
+</RelativeLayout>
