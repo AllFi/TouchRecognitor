@@ -14,7 +14,7 @@ public class Motion {
 
     public Motion(){
         Touchs = new Vector<Vector<Point>>();
-        for (int i =0; i<10; i++){
+        for (int i =0; i<2; i++){
             Touchs.add(null);
         }
     }
@@ -23,10 +23,8 @@ public class Motion {
         if ( Touchs.get(touchId) == null){
             Touchs.set(touchId, new Vector<Point>());
             Touchs.get(touchId).add(new Point(X,Y,Size,Time));
-            Log.d("Main", "addPoint!");
         } else{
             Touchs.get(touchId).add(new Point(X,Y,Size,Time));
-            Log.d("Main", "addPoint!");
         }
         return;
     }

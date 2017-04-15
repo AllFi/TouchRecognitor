@@ -17,9 +17,6 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
 
     private StringBuilder sb = new StringBuilder();
     private TextView tv;
-    private int upPI = 0;
-    private int downPI = 0;
-    private boolean inTouch = false;
     private String result = "";
     private CSVFileGenerator csv;
     private Button bt = null;
@@ -96,20 +93,16 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
         }
 
         int actionMask = event.getActionMasked();
-        // индекс касания
-        int pointerIndex = event.getActionIndex();
         // число касаний
         int pointerCount = event.getPointerCount();
 
 
         switch (actionMask) {
             case MotionEvent.ACTION_DOWN: // первое касание
-                inTouch = true;
-            case MotionEvent.ACTION_POINTER_DOWN: // последующие касания
-                downPI = pointerIndex;
                 break;
-            case MotionEvent.ACTION_UP: // прерывание последнего касания
-                inTouch = false;
+            case MotionEvent.ACTION_POINTER_DOWN: // последующие касания
+                break;
+            case MotionEvent.ACTION_UP: // прерывание последнего касаниz
 
                 if(!csv.addMotion(motion, activeTypes.get(Type))){
                     Toast toast = Toast.makeText(getApplicationContext(),
@@ -143,13 +136,10 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
 
                 motion = new Motion();
             case MotionEvent.ACTION_POINTER_UP: // прерывания касаний
-                upPI = pointerIndex;
                 break;
             case MotionEvent.ACTION_MOVE: // движение
-                for (int i = 0; i < 10; i++) {
-                    if (i < pointerCount) {
-                        motion.addPoint(event.getPointerId(i), event.getX(i), event.getY(i),event.getSize(i),event.getEventTime());
-                    }
+                for (int i = 0; i < pointerCount; i++) {
+                    motion.addPoint(event.getPointerId(i), event.getX(i), event.getY(i),event.getSize(i),event.getEventTime());
                 }
                 break;
         }

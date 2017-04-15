@@ -98,7 +98,7 @@ public class CSVFileGenerator extends ContextCompat {
     public boolean addMotion(Motion motion, String type){
         boolean ctype = checkType(motion, type);
         if (!ctype) return false;
-        for (int i=0; i<10; i++){
+        for (int i=0; i<2; i++){
             if (motion.Touchs.get(i) != null){
                 for (int j=0; j < motion.Touchs.get(i).size(); j++){
                     Result += String.valueOf(MotionNomber) + ";" + String.valueOf(i) +  ";" + motion.Touchs.get(i).get(j).ToString() + ";" + type + "\n";
