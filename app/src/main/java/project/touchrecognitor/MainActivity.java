@@ -51,9 +51,15 @@ public class MainActivity extends Activity{
                     toast.show();
                     return;
                 }
-                if ( Integer.parseInt(count.getText().toString()) <=  0 || Integer.parseInt(count.getText().toString()) > 100){
+                if ( Integer.parseInt(count.getText().toString()) <=  0){
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Введите корректное значение, пожалуйста!", Toast.LENGTH_SHORT);
+                    toast.show();
+                    return;
+                }
+                if (!(scrolls.isChecked() || taps.isChecked() || resizes.isChecked() || twists.isChecked())){
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Пожалуйста, выберите хотя бы один тип движений!", Toast.LENGTH_SHORT);
                     toast.show();
                     return;
                 }

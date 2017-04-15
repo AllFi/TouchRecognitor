@@ -20,6 +20,7 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
     private String result = "";
     private CSVFileGenerator csv;
     private Button bt = null;
+    private Button skipb = null;
     private String name = "";
     private int count = 10;
     private ArrayList<String> activeTypes = new ArrayList<String>();
@@ -49,6 +50,36 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
             }
         });
         bt.setVisibility(View.INVISIBLE);
+
+        skipb =(Button) findViewById(R.id.skip_button);
+        skipb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Type < activeTypes.size() - 1) {
+                    Type++;
+                    Counter = 0;
+                    sb.setLength(0);
+                    sb.append("Тип касаний: " + activeTypes.get(Type) + "\r\n");
+                    sb.append("Осталось: " + String.valueOf(count - Counter));
+                    tv.setText(sb.toString());
+                    motion = new Motion();
+                } else{
+                    end = true;
+                    skipb.setVisibility(View.INVISIBLE);
+                    bt.setVisibility(View.VISIBLE);
+                    sb.setLength(0);
+                    sb.append("Пожалуйста сохраните свой результат!");
+                    tv.setText(sb.toString());
+                    // событие
+                    String[] perms = {"android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE"};
+                    int permsRequestCode = 200;
+                    requestPermissions(perms, permsRequestCode);
+                }
+            }
+        });
+        skipb.setVisibility(View.VISIBLE);
+
+
 
         boolean scrolls = getIntent().getBooleanExtra("scrolls", false);
         boolean taps = getIntent().getBooleanExtra("taps", false);
@@ -119,6 +150,7 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
 
                     } else{
                         end = true;
+                        skipb.setVisibility(View.INVISIBLE);
                         bt.setVisibility(View.VISIBLE);
                         sb.setLength(0);
                         sb.append("Пожалуйста сохраните свой результат!");
