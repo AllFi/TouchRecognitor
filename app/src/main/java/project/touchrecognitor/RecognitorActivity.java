@@ -24,6 +24,7 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
     private String name = "";
     private int count = 10;
     private ArrayList<String> activeTypes = new ArrayList<String>();
+    private ArrayList<String> typeNames = new ArrayList<String>();
     private int Counter =0;
     private int Type = 0;
     private boolean end = false;
@@ -87,28 +88,37 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
         boolean twists = getIntent().getBooleanExtra("twists", false);
 
         if (scrolls){
-            activeTypes.add("scrollUp");
-            activeTypes.add("scrollDown");
-            activeTypes.add("scrollLeft");
-            activeTypes.add("scrollRight");
+            activeTypes.add("DU");
+            activeTypes.add("UD");
+            activeTypes.add("RL");
+            activeTypes.add("LR");
+            typeNames.add("Down to up swipe");
+            typeNames.add("Up to down swipe");
+            typeNames.add("Right to left swipe");
+            typeNames.add("Left to right swipe");
         }
 
         if (taps){
-            activeTypes.add("tap");
+            activeTypes.add("TP");
+            typeNames.add("Tap");
         }
 
         if (resizes){
-            activeTypes.add("pinch");
-            activeTypes.add("stretch");
+            activeTypes.add("ZI");
+            typeNames.add("Zoom-In");
+            activeTypes.add("ZO");
+            typeNames.add("Zoom-Out");
         }
 
         if (twists){
-            activeTypes.add("clockwiseTwist");
-            activeTypes.add("counterclockTwist");
+            activeTypes.add("TC");
+            typeNames.add("Clockwise Twist");
+            activeTypes.add("TCC");
+            typeNames.add("Counter-clockwise Twist");
         }
 
         sb.setLength(0);
-        sb.append("Тип касаний: " + activeTypes.get(0) + "\r\n");
+        sb.append("Тип касаний: " + typeNames.get(0) + "\r\n");
         sb.append("Осталось: " + String.valueOf(count));
         tv.setText(sb.toString());
     }
@@ -163,7 +173,7 @@ public class RecognitorActivity extends Activity implements View.OnTouchListener
                 }
 
                 sb.setLength(0);
-                sb.append("Тип касаний: " + activeTypes.get(Type) + "\r\n");
+                sb.append("Тип касаний: " + typeNames.get(Type) + "\r\n");
                 sb.append("Осталось: " + String.valueOf(count - Counter));
 
                 motion = new Motion();

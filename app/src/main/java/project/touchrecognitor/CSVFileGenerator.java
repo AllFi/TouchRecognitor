@@ -54,20 +54,20 @@ public class CSVFileGenerator extends ContextCompat {
         }
         if (count == 1){
             if (abs(XVec) + abs(YVec) < 100){
-                return type == "tap";
+                return type == "TP";
             }
             if (motion.Touchs.get(0).size() < 6) return false;
             if (abs(YVec)>abs(XVec)){
                 if (YVec < 0){
-                    return type =="scrollUp";
+                    return type =="DU";
                 } else{
-                    return type =="scrollDown";
+                    return type =="UD";
                 }
             } else{
                 if (XVec > 0){
-                    return type =="scrollRight";
+                    return type =="LR";
                 } else{
-                    return type =="scrollLeft";
+                    return type =="RL";
                 }
             }
         } else{
@@ -81,15 +81,15 @@ public class CSVFileGenerator extends ContextCompat {
             }
             if (abs(YVec)>abs(XVec)){
                 if (YVec > 0){
-                    return type =="stretch";
+                    return type =="ZO";
                 } else{
-                    return type =="pinch";
+                    return type =="ZI";
                 }
             } else{
                 if (XVec < 0){
-                    return type =="clockwiseTwist";
+                    return type =="TC";
                 } else{
-                    return type =="counterclockTwist";
+                    return type =="TCC";
                 }
             }
         }
